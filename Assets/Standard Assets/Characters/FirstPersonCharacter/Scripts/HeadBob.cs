@@ -7,6 +7,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     public class HeadBob : MonoBehaviour
     {
         public Camera Camera;
+        public GameObject cube;
         public CurveControlledBob motionBob = new CurveControlledBob();
         public LerpControlledBob jumpAndLandingBob = new LerpControlledBob();
         public RigidbodyFirstPersonController rigidbodyFirstPersonController;
@@ -42,6 +43,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 newCameraPosition.y = m_OriginalCameraPosition.y - jumpAndLandingBob.Offset();
             }
             Camera.transform.localPosition = newCameraPosition;
+            cube.transform.localPosition = newCameraPosition;
 
             if (!m_PreviouslyGrounded && rigidbodyFirstPersonController.Grounded)
             {
