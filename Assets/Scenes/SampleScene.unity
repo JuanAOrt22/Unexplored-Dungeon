@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -112,6 +112,83 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &160816093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 160816096}
+  - component: {fileID: 160816095}
+  - component: {fileID: 160816094}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &160816094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160816093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 26
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Munici\xF3n"
+--- !u!222 &160816095
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160816093}
+  m_CullTransparentMesh: 0
+--- !u!224 &160816096
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160816093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 214737052}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -217, y: 217}
+  m_SizeDelta: {x: 300, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +349,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1533770306}
+  - {fileID: 160816096}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -370,6 +448,29 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 114131388146921856, guid: baf3759e852c67544ae6f121317ebc20, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: baf3759e852c67544ae6f121317ebc20, type: 3}
+--- !u!1 &587177014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6592362542228447285, guid: baf3759e852c67544ae6f121317ebc20,
+    type: 3}
+  m_PrefabInstance: {fileID: 215842405}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &587177015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587177014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433e9c8d0293ac4429eaf19bff2b58cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 0}
+  detonationImpactVelocity: 10
+  sizeMultiplier: 1
+  reset: 1
+  resetTimeDelay: 10
 --- !u!1 &697970190
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -351, y: 265}
+  m_AnchoredPosition: {x: -221, y: 265}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1533770307
@@ -771,6 +872,62 @@ PrefabInstance:
         type: 3}
       propertyPath: vida
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: municionui
+      value: 
+      objectReference: {fileID: 160816094}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: MantenerPresionado
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: Bala
+      value: 
+      objectReference: {fileID: 8551071005817646249, guid: c05fe02bcea546f43ab34ded02a7b194,
+        type: 3}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: fuerzaDelDisparo
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: Cadencia
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: "Dispersi\xF3n"
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: TiempoDeRecarga
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: "Tama\xF1oDeLaRecamara"
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: BalasPorDisparo
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: particulasDisparo
+      value: 
+      objectReference: {fileID: 100006, guid: 0438351a6e6422d43a09930e9be00ee9, type: 3}
+    - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
+        type: 3}
+      propertyPath: TiempoEntreDisparos
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0f94eded1bc15347990905fa0114277, type: 3}
