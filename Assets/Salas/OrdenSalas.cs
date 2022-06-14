@@ -14,7 +14,5 @@ public class OrdenSalas : MonoBehaviour
 
     public GameObject cerrado;
 
-    public bool spawneo = false;
-
     public List<GameObject> lista;
 }

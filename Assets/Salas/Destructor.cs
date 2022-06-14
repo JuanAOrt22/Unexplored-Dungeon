@@ -11,6 +11,6 @@ public class Destructor : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 4f);
+        Destroy(gameObject, 0.2f);
     }
 }

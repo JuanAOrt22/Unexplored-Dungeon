@@ -707,7 +707,6 @@ MonoBehaviour:
   - {fileID: 2023139381963830156, guid: 03c755668bc5b4b489e9f84b8e2aa4d3, type: 3}
   - {fileID: 2860534322805184252, guid: e91a6f4fa7796e846bb756e7c800b6cf, type: 3}
   cerrado: {fileID: 2195096678089425438, guid: 8f4078429ccda3c46b0a0ed7105b3a7b, type: 3}
-  spawneo: 0
   lista: []
 --- !u!4 &1519353560
 Transform:
@@ -806,7 +805,7 @@ PrefabInstance:
     - target: {fileID: 3266728918789966687, guid: f0f94eded1bc15347990905fa0114277,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.6
       objectReference: {fileID: 0}
     - target: {fileID: 3266728918789966687, guid: f0f94eded1bc15347990905fa0114277,
         type: 3}
@@ -902,7 +901,7 @@ PrefabInstance:
     - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
         type: 3}
       propertyPath: "Dispersi\xF3n"
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334992545311462138, guid: f0f94eded1bc15347990905fa0114277,
         type: 3}

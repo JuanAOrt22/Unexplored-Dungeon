@@ -10,7 +10,7 @@ public class RoomSpawner : MonoBehaviour
     private int rand;
     private bool spawned = false;
 
-    void Start()
+    void Awake()
     {
         salas = GameObject.FindGameObjectWithTag("Rooms").GetComponent<OrdenSalas>();
         Invoke("Spawn", 0.1f);
@@ -49,7 +49,17 @@ public class RoomSpawner : MonoBehaviour
     {
         if (other.CompareTag("RoomSpawn"))
         {
-            Destroy(gameObject);
+            if (other.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                Invoke("InstanciarAlgo", 0.1f);
+                Destroy(gameObject);
+            }
+            spawned = true;
         }
+    }
+
+    void InstanciarAlgo()
+    {
+        Instantiate(salas.cerrado, transform.position, salas.cerrado.transform.rotation);
     }
 }

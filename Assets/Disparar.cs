@@ -45,11 +45,11 @@ public class Disparar : MonoBehaviour
     {
         if (MantenerPresionado)
         {
-            m_disparando = Input.GetKey(KeyCode.F);
+            m_disparando = Input.GetKey(KeyCode.Mouse0);
         }
         else
         {
-            m_disparando = Input.GetKeyDown(KeyCode.F);
+            m_disparando = Input.GetKeyDown(KeyCode.Mouse0);
         }
 
         if (m_listoparadisparar && m_disparando && !m_recargando && BalasRestantes > 0)
@@ -73,8 +73,6 @@ public class Disparar : MonoBehaviour
     private void Dispararr()
     {
         m_listoparadisparar = false;
-
-        Debug.Log("Disparo");
 
         Ray ray = fps.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
