@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8445691496157762824}
   - component: {fileID: 939640023652217587}
   - component: {fileID: 6886616598907625120}
-  - component: {fileID: 64533923474549844}
   - component: {fileID: 8958380879316764998}
   - component: {fileID: 114322129296639162}
+  - component: {fileID: 861996903886079083}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Bala
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8551071005817646249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.66, y: 3.45, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,20 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64533923474549844
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8551071005817646249}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &8958380879316764998
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -122,4 +108,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82a2a6d2423217642a65629d0677c24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 10
+  Damage: 50
+--- !u!136 &861996903886079083
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551071005817646249}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

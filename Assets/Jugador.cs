@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Jugador : MonoBehaviour
 {
@@ -20,9 +21,14 @@ public class Jugador : MonoBehaviour
     {
         porcentajevida = vida / vidamaxima;
         slider.value = porcentajevida;
+        if(vida <= 0)
+        {
+            vida = vidamaxima;
+            SceneManager.LoadScene("Perdiste");
+        }
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         vida -= damage;
     }

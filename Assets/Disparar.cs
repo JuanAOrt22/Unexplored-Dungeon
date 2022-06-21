@@ -7,6 +7,10 @@ public class Disparar : MonoBehaviour
 {
     public GameObject Bala;
 
+    public AudioClip disparo;
+
+    public AudioSource Audio;
+
     public float fuerzaDelDisparo, fuerzaarriba;
 
     public float Cadencia, Dispersión, TiempoDeRecarga, TiempoEntreDisparos;
@@ -77,6 +81,9 @@ public class Disparar : MonoBehaviour
         Ray ray = fps.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
+        Audio.clip = disparo;
+        Audio.Play(1);
+
         Vector3 Target;
         if (Physics.Raycast(ray, out hit))
         {
@@ -107,7 +114,7 @@ public class Disparar : MonoBehaviour
         if(particulasDisparo != null)
         {
             GameObject particulas = Instantiate(particulasDisparo, PuntoDeAtaque.position, Quaternion.identity);
-            Destroy(particulas, TiempoEntreDisparos+0.1f);
+            Destroy(particulas, 0.1f);
         }
         if(allowInvoke)
         {
